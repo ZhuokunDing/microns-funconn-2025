@@ -4,6 +4,7 @@ services:
   notebook:
     container_name: microns-funconn-2025
     image: ghcr.io/${REGISTRY_NAME}/microns-funconn-2025
+    pull_policy: always
     ipc: host
     volumes:
       - .:/src/microns-funconn-2025
